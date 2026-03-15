@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/efbf198f8e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" href="img/favi.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Pet Mate</title>
+</head>
+<body>
+    <header>
+        <nav class="container flex-box">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul class="big_menu">
+                    <li><a href="#">펫시터</a>
+                        <ul class="submenu">
+                            <li><a href="sub1.html">펫시터 소개</a></li>
+                            <li><a href="#">방문 돌봄 / 산책</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub2.html">펫메이트</a></li>
+                    <li><a href="#">후기</a></li>
+                    <li><a href="#">서비스</a>
+                        <ul class="submenu">
+                            <li><a href="#">정기 예약</a></li>
+                            <li><a href="#">동물병원 연계</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>        
+    </header>
+
+    <!-- 모바일 메뉴 ============================ -->
+    
+        <div class="mo-header"></div>
+            <div class="menu-phone" id="bt" >
+                <span></span>
+            </div>
+        
+    
+        <div class="mo-menu">
+            <ul class="">
+                <li><a href="#" onclick="manuShow()">펫시터</a>
+                    <ul class="mo-submenu" id="sitter">
+                        <li><a href="sub1.html" >펫시터 소개</a></li>
+                        <li><a href="#" >방문 돌봄 / 산책</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub2.html">펫메이트</a></li>
+                <li><a href="#">후기</a></li>
+                <li><a href="#" onclick="subShow()" >서비스</a>
+                    <ul class="mo-submenu" id="service">
+                        <li><a href="#" >정기 예약</a></li>
+                            <li><a href="#" >동물병원 연계</a></li>
+                        <li><a href="#" >고객센터</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<!-- 모바일 메뉴 end  ============================ -->
+
+    <main>
+        <section class="banner">
+                <div class="container">
+                    <div class="banner_txt">
+                        <h2>Pet <br>
+                            Walking <br>
+                            Care <br>
+                            Service</h2>
+                        <p>반려동물을 위한 차분하고 <br> 안정적인 
+                            산책 돌봄 서비스</p>
+                    </div>
+                    <div class="banner_img">
+                        <img src="img/pc_index_banner1.png" alt="" >
+                        <img src="img/mobile_index_banner1.png" alt="" >
+                    </div>
+                </div>
+        </section>
+
+        <section class="care-service">
+            <div class="container">
+                <div class="flex-box">
+                    <div>
+                        <img src="img/mainimg/pc_index_care1.png" alt="" id="careimg">
+                        <a href="#">바로가기</a>
+                    </div>
+                    <div>
+                        <h2>서비스 케어 구조</h2>
+                        <ul>
+                            <li >
+                                <div class="title">장기 산책 돌봄 케어</div>
+                                <span class="content">
+                                    여행이나 장기 외출 시 일정 기간 동안 <br>
+                                    반려동물의 산책과 돌봄을 제공하며, <br>
+                                    정해진 일정에 맞춰 안정적으로 케어합니다.
+                                </span>
+                            </li>
+                            
+                            <li>
+                                <div class="title">당일 산책 돌봄 케어</div>
+                                <span class="content">
+                                    외출이나 일정이 있을 때 필요한 시간만 선택해 <br>
+                                    산책과 돌봄 서비스를 이용할 수 있으며, <br>
+                                    원하는 시간에 맞춰 유연하게 예약이 가능합니다.
+                                </span> 
+                            </li>
+                            
+                            <li>
+                               <div class="title"> 반려동물 의료 서비스</div>
+                                <span class="content">
+                                    주변 위치 24시간 동물병원 정보를 제공하며,<br>
+                                    위급 상황 발생 시 가장 가까운 병원으로 연결되어 <br>
+                                    신속한 진료가 이루어질 수 있도록 지원합니다.
+                                </span>  
+                            </li>
+                        </ul>
+                    </div>
+                </div>        
+            </div>
+        </section>
+
+        <section class="mo-care-service">
+            <h2>케어 서비스 구조</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/mainimg/mobile_index_care1.png" alt="">
+                    <span class="mo-content">
+                        <span class="mo-title">장기 산책 돌봄 케어</span>
+                        여행이나 장기 외출 시 일정 기간 동안 <br>
+                        반려동물의 산책과 돌봄을 제공하며 <br>
+                        정해진 일정에 맞춰 안정적으로 케어합니다.
+                    </span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/mainimg/mobile_index_care2.png" alt="">
+                    <span class="mo-content">
+                        <span class="mo-title">당일 산책 돌봄 케어</span>
+                        외출이나 일정이 있을 때 필요한 시간만 선택해 <br>
+                        산책과 돌봄 서비스를 이용할 수 있으며 <br>
+                        원하는 시간에 맞춰 유연하게 예약이 가능합니다.
+                    </span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/mainimg/mobile_index_care3.png" alt="">
+                    <span class="mo-content">
+                        <span class="mo-title">반려동물 의료 서비스</span>
+                        주변 위치 24시간 동물병원 정보를 제공하며<br>
+                        위급 상황 발생 시 가장 가까운 병원으로 연결되어 <br>
+                        신속한 진료가 이루어질 수 있도록 지원합니다.
+                    </span>
+                </div>
+                
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="greenbt"><a href="#">바로가기</a></div>
+        </section>
+        <section class="review ">
+            <div class="container">
+                <h2>실시간 이용자 후기</h2>
+                <div class="flex-box">
+                    <div class="reviewcard">
+                        <img src="img/mainimg/pc_index_section1.png" alt="">
+                        <p>낯가림이 심한 아이라 처음엔 걱정이 많았어요. 혹시 스트레스받지 않을까 계속 신경이 쓰였는데 산책 중간중간 보내주신 사진과 설명 덕분에
+                        아이 표정이 점점 편안해지는 게 보여서 안심이에요.</p>
+                    </div>
+                    <div class="reviewcard">
+                        <img src="img/mainimg/pc_index_section2.png" alt="">
+                        <p>처음 이용하는 서비스라 걱정이 많았는데
+                        상담부터 돌봄까지 전 과정이 체계적으로 느껴졌어요.
+                        신뢰할 수 있는 서비스라는 인상을 받았습니다.
+                        생각보다 훨씬 만족스러운 경험이었습니다.</p>
+                    </div>
+                    <div class="reviewcard">
+                        <img src="img/mainimg/pc_index_section3.png" alt="">
+                        <p>집에 돌아왔을 때 아이가 평소처럼 차분하게 쉬고 있는 모습을 보고
+                            돌봄이 얼마나 안정적으로 이루어졌는지 느껴졌어요.
+                            무리한 산책 없이 아이 컨디션에 맞춰 진행해주신 게
+                            정말 감사하고 만족스러웠어요.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container"><a href="#">더보기 &plus;</a></div>
+        </section>
+
+        <section class="mo-review ">
+            <div class="container">
+                <h2>이용자 후기</h2>
+                <div class="flex-box">
+                    <img src="img/mainimg/mobile_index_section1.png" alt="">
+                    <p>낯가림이 심한 아이라 처음엔 걱정이 많았어요. 혹시 스트레스받지 않을까 계속 신경이 쓰였는데 산책 중간중간 보내주신 사진과 설명 덕분에
+                    아이 표정이 점점 편안해지는 게 보여서 안심이 됐습니다.</p>
+                </div>
+            </div>
+            <div><a href="#">더보기 &plus;</a></div>
+        </section>
+        <section class="petmate">
+            <div class="container">
+                <h2>펫메이트</h2>
+                <p>가까운 이웃, 가벼운 연결. <br> 함께하는 산책과 돌봄</p>
+                <div class="matesection flex-box">
+                    <span>방금 전</span>
+                    <img src="img/mainimg/pc_index_mate1-1.png" alt="">
+                    <div class="matetxt">
+                        <h2>대형견 키우시는 분들 목줄 추천 좀요!</h2>
+                        <p>하네스 vs 목줄 고민 중인데 실사용 후기 궁금해요</p>
+                    </div>
+                    <a href="sub2.html">더보기 &plus;</a>
+                </div>
+            </div>
+        </section>
+        <section class="mo-petmate">
+            <div class="container">
+                <h2>펫메이트</h2>
+                <p>가까운 이웃, 가벼운 연결. <br> 함께하는 산책과 돌봄</p>
+                <div class="mo-matesection">
+                    <div class="mo-matetxt">
+                    <span>방금 전</span>
+                        <h2>대형견 키우시는 분들 목줄 추천 좀요!</h2>
+                        <p>하네스 vs 목줄 고민 중인데 <br>실사용 후기 궁금해요</p>
+                    </div>
+                    <img src="img/mainimg/mobile_index_mate.png" alt="">
+                </div>
+                <a href="sub2.html">더보기 &plus;</a>
+            </div>
+        </section>
+    <section class="faq">
+    <div class="container">
+        <h2>자주 묻는 질문</h2>
+        <div class="flex-box faq-section">
+            
+        <!-- 서비스 관련 -->
+        <div class="faq-box">
+            <h3>서비스 관련</h3>
+            <ul>
+            <li>
+                <div class="query">Q. 산책과 돌봄은 어떤 방식으로 진행되나요?</div>
+                <span class="answer" style="padding: 30px;">
+                    A. 아이의 성향과 요청사항을 반영해 무리 없는 속도로 산책이 진행되며, 
+                    산책 후에는 휴식, 상태 확인, 간단한 케어까지 함께 이루어집니다. 
+                    모든 과정은 약속된 시간에 맞춰 안정적으로 진행됩니다.
+                </span>
+            </li>
+            <li>
+                <div class="query">Q. 노령견 / 아픈 아이도 이용할 수 있나요?</div>
+                <span class="answer">
+                    A. 가능합니다. 건강 상태와 주의사항을 전달해주시면,
+                    해당 경험이 있는 펫시터가 배정되어 아이의 컨디션에 맞춰 진행됩니다.
+                </span>
+            </li>
+            <li>
+                <div class="query">Q. 장기 케어와 당일 케어의 차이는 무엇인가요?</div>
+                <span class="answer">
+                    A. 당일 케어는 잠시 자리를 비우는 시간에 맞춰 산책과 돌봄이 진행되며,
+                    장기 케어는 여행이나 장시간 부재 시 반려동물의 일상 루틴을 관리하는 서비스입니다.
+                </span>
+            </li>
+            <li>
+                <div class="query">Q. 반려동물 의료 서비스는 어떻게 연계되나요?</div>
+                <span class="answer">
+                    A. 위급 상황에 대비해 지역 내 24시간 동물병원과 연계되어 있습니다. 
+                    필요 시 보호자 동의 하에 가장 가까운 병원으로 즉시 연계되며, 
+                    산책 돌봄 이용과 관계없이 의료 연계를 요청하실 수 있습니다.
+                </span>
+            </li>
+            </ul>
+        </div>
+        <!-- 요금 관련 -->
+        <div class="faq-box">
+            <h3>요금 관련</h3>
+            <ul>
+            <li>
+                <div class="query">Q. 예약 변경 및 취소는 어떻게 하나요?</div>
+                <span class="answer">
+                    A. 예약 내역에서 간편하게 일정 변경 및 취소가 가능하며,
+                        이용 시간에 따라 수수료 없이 조정할 수 있는 기준이 안내됩니다.
+                </span>
+            </li>
+            <li>
+                <div class="query">Q. 요금은 어떻게 책정되나요?</div>
+                <span class="answer">
+                    A. 반려동물의 크기, 산책 시간, 케어 유형(당일/장기)에 따라 요금이 책정되며,
+                    예약 전 예상 금액을 미리 확인할 수 있습니다.
+                </span>
+            </li>
+            <li>
+                <div class="query">Q. 추가 비용이 발생하는 경우도 있나요?</div>
+                <span class="answer">
+                    A. 기본 산책 돌봄 외에 특수 케어나 장시간 연장, 병원 동행 등의 요청이 있을 경우에만
+                    사전 안내 후 추가 비용이 발생할 수 있습니다.
+                </span>
+            </li>
+            <li>
+                <div class="query">Q. 정기적으로 이용하면 할인 혜택이 있나요?</div>
+                <span class="answer">
+                    A. 정기 예약이나 장기 케어 이용 시 할인 혜택이 제공되어, 
+                    꾸준히 이용하시는 보호자분들께 보다 합리적인 요금으로 서비스를 제공합니다.
+                </span>
+            </li>
+            </ul>
+        </div>
+        </div>
+        <div class="faq-more container">
+            <a href="#">더보기 &plus;</a>
+        </div>
+    </div>
+    </section>
+
+    <section class="mo-faq">
+    <div class="container">
+        <h2>자주 묻는 질문</h2>
+        <div class="flex-box mo-faq-section">
+
+        <!-- 서비스 관련 -->
+        <div class="mo-faq-box">
+            <h3>서비스 관련</h3>
+            <ul type="A">
+            <li>
+                <div class="mo-query">Q. 산책과 돌봄은 어떤 방식으로 진행되나요?</div>
+                <span class="mo-answer" >
+                    A. 아이의 성향과 요청사항을 반영해 무리 없는 속도로 산책이 진행되며, 
+                    산책 후에는 휴식, 상태 확인, 간단한 케어까지 함께 이루어집니다. 
+                    모든 과정은 약속된 시간에 맞춰 안정적으로 진행됩니다.
+                </span>
+            </li>
+            <li>
+                <div class="mo-query">Q. 노령견 / 아픈 아이도 이용할 수 있나요?</div>
+                <span class="mo-answer">
+                    A. 가능합니다. 건강 상태와 주의사항을 전달해주시면,
+                    해당 경험이 있는 펫시터가 배정되어 아이의 컨디션에 맞춰 진행됩니다.
+                </span>
+            </li>
+            <li>
+                <div class="mo-query">Q. 장기 케어와 당일 케어의 차이는 무엇인가요?</div>
+                <span class="mo-answer">
+                    A. 당일 케어는 잠시 자리를 비우는 시간에 맞춰 산책과 돌봄이 진행되며,
+                    장기 케어는 여행이나 장시간 부재 시 반려동물의 일상 루틴을 관리하는 서비스입니다.
+                </span>
+            </li>
+            <li>
+                <div class="mo-query">Q. 반려동물 의료 서비스는 어떻게 연계되나요?</div>
+                <span class="mo-answer">
+                    A. 위급 상황에 대비해 지역 내 24시간 동물병원과 연계되어 있습니다. 
+                    필요 시 보호자 동의 하에 가장 가까운 병원으로 즉시 연계되며, 
+                    산책 돌봄 이용과 관계없이 의료 연계를 요청하실 수 있습니다.
+                </span>
+            </li>
+            </ul>
+        </div>
+        <!-- 요금 관련 -->
+        <div class="mo-faq-box">
+            <h3>요금 관련</h3>
+            <ul>
+            <li>
+                <div class="mo-query">Q. 예약 변경 및 취소는 어떻게 하나요?</div>
+                <span class="mo-answer">
+                    A. 예약 내역에서 간편하게 일정 변경 및 취소가 가능하며,
+                        이용 시간에 따라 수수료 없이 조정할 수 있는 기준이 안내됩니다.
+                </span>
+            </li>
+            <li>
+                <div class="mo-query">Q. 요금은 어떻게 책정되나요?</div>
+                <span class="mo-answer">
+                    A. 반려동물의 크기, 산책 시간, 케어 유형(당일/장기)에 따라 요금이 책정되며,
+                    예약 전 예상 금액을 미리 확인할 수 있습니다.
+                </span>
+            </li>
+            <li>
+                <div class="mo-query">Q. 추가 비용이 발생하는 경우도 있나요?</div>
+                <span class="mo-answer">
+                    A. 기본 산책 돌봄 외에 특수 케어나 장시간 연장, 병원 동행 등의 요청이 있을 경우에만
+                    사전 안내 후 추가 비용이 발생할 수 있습니다.
+                </span>
+            </li>
+            <li>
+                <div class="mo-query">Q. 정기적으로 이용하면 할인 혜택이 있나요?</div>
+                <span class="mo-answer">
+                    A. 정기 예약이나 장기 케어 이용 시 할인 혜택이 제공되어, 
+                    꾸준히 이용하시는 보호자분들께 보다 합리적인 요금으로 서비스를 제공합니다.
+                </span>
+            </li>
+            </ul>
+        </div>
+        </div>
+        <div class="mo-faq-more">
+            <a href="#">더보기 &plus;</a>
+        </div>
+    </div>
+    </section>
+    </main>
+    <footer>
+        <div class="container footer-bar">
+            <div class="flex-box">
+                <ul>
+                    <li><a href="#">서비스 소개</a></li>
+                    <li><a href="#">질문과 답변</a></li>
+                    <li><a href="#">비즈니스 제휴</a></li>
+                    <li><a href="#">펫시터 양성 프로그램 제휴</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">전화 상담 : 070-1234-5678</a></li>
+                    <li><a href="#">채팅 상담</a></li>
+                    <li>평일 11:00-18:00</li>
+                    <li>점심 13:00-14:00</li>
+                </ul>
+                <ul>
+                    <li><a href="#">이용 약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                    <li><a href="#">안전 보상 제도</a></li>
+                </ul>
+            </div>
+            <h2><a href="#">펫메이트</a></h2>
+        </div>
+        <div class="container mo-footer-bar">
+            <div>
+                <ul>
+                    <li><a href="#">서비스 소개 | 질문과 답변 | 비즈니스 제휴 </a></li>
+                    <li><a href="#">펫시터 양성 프로그램 제휴 | 공지사항  </a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">전화 상담 : 070-1234-5678</a></li>
+                    <li><a href="#">채팅 상담 : 평일 11:00-18:00 | 점심 13:00-14:00</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">이용 약관 | 개인정보 처리방침</a></li>
+                    <li><a href="#">위치기반서비스 이용약관 | 안전 보상 제도</a></li>
+                </ul>
+            </div>
+            <h2><a href="#">펫메이트</a></h2>
+        </div>
+    </footer>
+    <div class="popup">
+        <div>
+            <img src="img/mainimg/popup.png" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+
+let sitterMenu = document.querySelector('#sitter');
+function manuShow(){
+    if(sitterMenu.style.display == 'none'){
+        sitterMenu.style.display = 'block';
+        
+    }
+    else{
+        sitterMenu.style.display = 'none';
+    };
+    
+};
+
+let serviceMenu = document.querySelector('#service');
+function subShow(){
+    if(serviceMenu.style.display == 'none'){
+        serviceMenu.style.display = 'block';
+    }
+    else{
+        serviceMenu.style.display = 'none';
+    };
+    
+};
+
+
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 20,
+        pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        },
+    });
+
+
+
+
+
+
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+     $('.menu > ul li').mouseenter(function(){
+                $(this).children('.submenu').stop().slideDown('fast'); });
+                
+    $('.menu > ul li').mouseleave(function(){
+                $(this).children('.submenu').stop().slideUp('fast'); }); 
+
+    $('#bt').click(function(){
+        $(this).toggleClass('active'); 
+        $('.mo-menu').toggleClass('show'); 
+    });    
+
+    $('.title').click(function(){
+        // 클릭한 자신의 배경색과 글자색을 클래스를 적용하여 변경
+        $(this).addClass('careshow');
+        // 클릭한 다른 부모의 자식의 배경색과 글자색 클래스 제거
+        $(this).parent('li').siblings('li').children('div').removeClass('careshow');
+        // 내가 클릭한 다음 span태그 내용 보이기
+        $(this).next('span').fadeToggle().show();
+        // 내 부모의 형제들의 span 자식들이 혹시 열려있으면 닫기 
+        $(this).parent('li').siblings('li').children('span').fadeToggle().hide();       
+    });      
+
+    
+    $('.title').eq(0).click(function(){
+        $('#careimg').attr('src','img/mainimg/pc_index_care1.png');
+        
+    });    
+    $('.title').eq(0).trigger('click');  
+    
+    $('.title').eq(1).click(function(){
+        $('#careimg').attr('src','img/mainimg/pc_index_care2.png');
+    });      
+    $('.title').eq(2).click(function(){
+        $('#careimg').attr('src','img/mainimg/pc_index_care3.png');
+    });      
+
+
+    
+
+$('.query').click(function(){
+        // 클릭한 자신의 배경색과 글자색을 클래스를 적용하여 변경
+        $(this).addClass('faqshow');
+        // 클릭한 다른 부모의 자식의 배경색과 글자색 클래스 제거
+        $(this).parent('li').siblings('li').children('div').removeClass('faqshow');
+        // 내가 클릭한 다음 span태그 내용 보이기
+        $(this).next('span').fadeToggle().css('display','block');
+        // 내 부모의 형제들의 span 자식들이 혹시 열려있으면 닫기 
+        $(this).parent('li').siblings('li').children('span').fadeToggle().hide();       
+    }); 
+
+$('.mo-query').click(function(){
+        // 클릭한 자신의 배경색과 글자색을 클래스를 적용하여 변경
+        $(this).addClass('faqshow');
+        // 클릭한 다른 부모의 자식의 배경색과 글자색 클래스 제거
+        $(this).parent('li').siblings('li').children('div').removeClass('faqshow');
+        // 내가 클릭한 다음 span태그 내용 보이기
+        $(this).next('span').fadeToggle().css('display','block');
+        // 내 부모의 형제들의 span 자식들이 혹시 열려있으면 닫기 
+        $(this).parent('li').siblings('li').children('span').fadeToggle().hide();       
+    }); 
+
+
+    
+
+
+});
+
+
+$(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            $(".mo-header").addClass("mo-headebar");
+            
+        } else {
+            $(".mo-header").removeClass("mo-headebar");
+            
+        }
+    }); 
+}); 
+
+
+
+</script>
+</body>
+</html>
