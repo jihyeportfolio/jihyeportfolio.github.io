@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/efbf198f8e.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<link rel="icon" type="image/png" href="img/favi.png">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/sub1.css">
+    <title>Pet Mate</title>
+</head>
+<body>
+    <header>
+        <nav class="container flex-box">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul class="big_menu">
+                    <li><a href="#">펫시터</a>
+                        <ul class="submenu">
+                            <li><a href="sub1.html">펫시터 소개</a></li>
+                            <li><a href="#">방문 돌봄 / 산책</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub2.html">펫메이트</a></li>
+                    <li><a href="#">후기</a></li>
+                    <li><a href="#">서비스</a>
+                        <ul class="submenu">
+                            <li><a href="#">정기 예약</a></li>
+                            <li><a href="#">동물병원 연계</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>        
+    </header>
+
+    <!-- 모바일 메뉴 ============================ -->
+    
+        <div class="mo-header"></div>
+            <div class="menu-phone" id="bt" >
+                <span></span>
+            </div>
+        
+    
+        <div class="mo-menu">
+            <ul class="">
+                <li><a href="#" onclick="manuShow()">펫시터</a>
+                    <ul class="mo-submenu" id="sitter">
+                        <li><a href="sub1.html" >펫시터 소개</a></li>
+                        <li><a href="#" >방문 돌봄 / 산책</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub2.html">펫메이트</a></li>
+                <li><a href="#">후기</a></li>
+                <li><a href="#" onclick="subShow()" >서비스</a>
+                    <ul class="mo-submenu" id="service">
+                        <li><a href="#" >정기 예약</a></li>
+                            <li><a href="#" >동물병원 연계</a></li>
+                        <li><a href="#" >고객센터</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<!-- 모바일 메뉴 end  ============================ -->
+
+    <main>
+        <section class="banner">                
+                   
+            <div class="container flex-box">
+                <div class="banner_img">
+                    <img src="img/pc_sub1_banner1.png" alt="" >
+                </div>  
+
+                <div class="banner_txt">
+                    <h2>Meet Our <br> 
+                        Pet Sitters</h2>
+                </div>
+            </div> 
+        
+        
+            <div class="greenbox">
+                <p>산책과 돌봄을 중심으로 반려동물의 <br> 일상에 맞춘 케어 서비스를 <br>
+                        제공하는 펫시터의 활동 내용과 <br> 서비스 범위를 안내합니다.</p>
+            </div>
+                 
+                
+        </section>
+        <section class="mo-banner">                
+                   
+            <div class="container">
+                <div class="banner_img">
+                    <img src="img/mobile_sub1_banner1-1.png" alt="" >
+                    <img src="img/mobile_sub1_banner1.png" alt="" >
+                </div>  
+                <!-- 50vh -->
+
+                <div class="banner_txt">
+                    <h2>Meet <span>Our Pet</span> Sitters</h2>
+                <p>산책과 돌봄을 중심으로 반려동물의 <br> 일상에 맞춘 케어 서비스를 <br>
+                        제공하는 펫시터의 활동 내용과 <br> 서비스 범위를 안내합니다.</p>
+            </div>
+             </div> 
+                 
+                
+        </section>
+
+        <section class="care-process">
+            <div class="container">
+                <div class="flex-box">
+                
+                    <div>
+                        <h2>안심 케어 프로세스</h2>
+                        <ul>
+                            <li >
+                                <div class="title">산책 돌봄 LIVE 생중계</div>
+                                <span class="content">
+                                    산책과 돌봄 과정을 실시간 영상으로 <br>
+                                    제공해 외출 중에도 반려동물의 <br>
+                                    상태를 직접 확인할 수 있습니다.
+                                </span>
+                            </li>
+                            <li>
+                                <div class="title">산책 코스 GPS</div>
+                                <span class="content">
+                                    산책 중 GPS로 이동 경로를 공유해 <br>
+                                    보호자가 현재 위치와 이동 상황을 <br>
+                                    실시간으로 확인할 수 있습니다.
+                                </span> 
+                            </li>
+                            
+                            <li>
+                               <div class="title"> 케어 진행 내역</div>
+                                <span class="content">
+                                    돌봄 과정과 주요 케어 내용을 정리해 <br>
+                                    산책 시간, 이동 경로, 케어 내역을 <br>
+                                    기록으로 제공해드립니다.
+                                </span>  
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="img/mainimg/pc_sub1_live.png" alt="" id="careimg">
+                        <a href="#">바로가기</a>
+                    </div>
+                </div>        
+            </div>
+        </section>
+
+        <section class="mo-care-process">
+            <h2>케어 서비스 구조</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/mainimg/pc_sub1_live.png" alt="">
+                        <span class="mo-content">
+                            <span class="mo-title">산책 돌봄 LIVE 생중계</span>
+                            산책과 돌봄 과정을 실시간 영상으로 <br>
+                            제공해 외출 중에도 반려동물의 <br>
+                            상태를 직접 확인할 수 있습니다.
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/mainimg/pc_sub1_gps.png" alt="">
+                        <span class="mo-content">
+                            <span class="mo-title">산책 코스 GPS</span>
+                            산책 중 GPS로 이동 경로를 공유해 <br>
+                            보호자가 현재 위치와 이동 상황을 <br>
+                            실시간으로 확인할 수 있습니다.
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/mainimg/pc_sub1_care.png" alt="">
+                        <span class="mo-content">
+                            <span class="mo-title">케어 진행 내역</span>
+                            돌봄 과정과 주요 케어 내용을 정리해 <br>
+                            산책 시간, 이동 경로, 케어 내역을 <br>
+                            기록으로 제공해드립니다.
+                        </span>
+                    </div>
+                </div>
+                
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="greenbt"><a href="#">바로가기</a></div>
+        </section>
+        <section class="system">
+            <div class="container">
+                <h2>펫시터 선발 시스템</h2>
+                <div class="systemlist">
+                    <img src="img/mainimg/pc_sub1_system1_icon.png" alt="">
+                    <p>신분증, 등본, 제3자 신원보증 등 총 3단계의 공적 서류를 통해 신원과 정보의 진위를 꼼꼼히 확인하며 신뢰할 수 있는 인원인지 체계적으로 검증합니다.</p>
+                </div>
+                <div class="systemlist">
+                    <img src="img/mainimg/pc_sub1_system2_icon.png" alt="">
+                    <p>비대면 인터뷰를 통해 돌봄 경험과 상황 대응 능력을 중심으로,펫시터로서의 책임감과 서비스 파트너로서의 적합성을 종합적으로 확인하고 판단합니다.</p>
+                </div>
+                <div class="systemlist">
+                    <img src="img/mainimg/pc_sub1_system3_icon.png" alt="">
+                    <p>이론과 실습 교육을 통해 돌봄 기술과 현장 대응 역량을 집중적으로 훈련하고 실제 상황을 반영한 평가를 통과한 인원만 공식 펫시터로 활동할 수 있습니다.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sitterlist">
+            <div class="container">
+                <div class="swiper mySwiper sitterSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="img/mainimg/pc_sub1_sitter1.png" alt="">
+                                <p>“아이의 속도에 맞춰 천천히 다가갑니다.”</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="img/mainimg/pc_sub1_sitter2.png" alt="">
+                                <p>“작은 변화도 보호자에게 공유합니다.”</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="img/mainimg/pc_sub1_sitter3.png" alt="">
+                                <p>“짧은 순간도 놓치지 않습니다.”</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="img/mainimg/pc_sub1_sitter4.png" alt="">
+                                <p>“에너지에 맞는 산책 리듬을 유지합니다.”</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="img/mainimg/pc_sub1_sitter5.png" alt="">
+                                <p>“산책 이후까지 세심하게 살핍니다.”</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="img/mainimg/pc_sub1_sitter6.png" alt="">
+                                <p>“아이의 컨디션에 맞춰 진행합니다.”</p>
+                            </div>
+                        </div>
+                           <div class="swiper-slide">
+                            <div>
+                                <img src="img/mainimg/pc_sub1_sitter7.png" alt="">
+                                <p>“아이의 속도에 맞춰 천천히 다가갑니다.”</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="img/mainimg/pc_sub1_sitter8.png" alt="">
+                                <p>“작은 변화도 보호자에게 공유합니다.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                
+            </div>
+        </section>
+        
+    </main>
+
+        <footer>
+        <div class="container footer-bar">
+            <div class="flex-box">
+                <ul>
+                    <li><a href="#">서비스 소개</a></li>
+                    <li><a href="#">질문과 답변</a></li>
+                    <li><a href="#">비즈니스 제휴</a></li>
+                    <li><a href="#">펫시터 양성 프로그램 제휴</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">전화 상담 : 070-1234-5678</a></li>
+                    <li><a href="#">채팅 상담</a></li>
+                    <li>평일 11:00-18:00</li>
+                    <li>점심 13:00-14:00</li>
+                </ul>
+                <ul>
+                    <li><a href="#">이용 약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                    <li><a href="#">안전 보상 제도</a></li>
+                </ul>
+            </div>
+            <h2><a href="index.html">펫메이트</a href="#"></h2>
+        </div>
+        <div class="container mo-footer-bar">
+            <div>
+                <ul>
+                    <li><a href="#">서비스 소개 | 질문과 답변 | 비즈니스 제휴 </a></li>
+                    <li><a href="#">펫시터 양성 프로그램 제휴 | 공지사항  </a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">전화 상담 : 070-1234-5678</a></li>
+                    <li><a href="#">채팅 상담 : 평일 11:00-18:00 | 점심 13:00-14:00</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">이용 약관 | 개인정보 처리방침</a></li>
+                    <li><a href="#">위치기반서비스 이용약관 | 안전 보상 제도</a></li>
+                </ul>
+            </div>
+            <h2><a href="index.html">펫메이트</a href="#"></h2>
+        </div>
+    </footer>
+    <div class="popup">
+        <div>
+            <img src="img/mainimg/popup.png" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 20,
+            pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+        
+    });
+
+    
+      var sitterSwiper = new Swiper(".sitterSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination .mySwiper",
+                dynamicBullets: true,
+            },
+            loopAdditionalSlides: 3,
+     breakpoints: {
+        767: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+    }
+
+        
+    });
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+    $('.menu > ul li').mouseenter(function(){
+                $(this).children('.submenu').stop().slideDown('fast');
+            });
+                
+    $('.menu > ul li').mouseleave(function(){
+                $(this).children('.submenu').stop().slideUp('fast');
+            }); 
+
+
+    $('#bt').click(function(){
+        $(this).toggleClass('active'); 
+        $('.mo-menu').toggleClass('show'); 
+    }); 
+
+        $('.title').click(function(){
+        // 클릭한 자신의 배경색과 글자색을 클래스를 적용하여 변경
+        $(this).addClass('careshow');
+        // 클릭한 다른 부모의 자식의 배경색과 글자색 클래스 제거
+        $(this).parent('li').siblings('li').children('div').removeClass('careshow');
+        // 내가 클릭한 다음 span태그 내용 보이기
+        $(this).next('span').fadeToggle().show();
+        // 내 부모의 형제들의 span 자식들이 혹시 열려있으면 닫기 
+        $(this).parent('li').siblings('li').children('span').fadeToggle().hide();       
+    });
+
+        
+        $('.title').eq(0).click(function(){
+        $('#careimg').attr('src','img/mainimg/pc_sub1_live.png');
+        
+    });    
+    $('.title').eq(0).trigger('click');  
+    
+    $('.title').eq(1).click(function(){
+        $('#careimg').attr('src','img/mainimg/pc_sub1_gps.png');
+    });      
+    $('.title').eq(2).click(function(){
+        $('#careimg').attr('src','img/mainimg/pc_sub1_care.png');
+    });
+    
+    
+});
+
+$(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            $(".mo-header").addClass("mo-headebar");
+            
+        } else {
+            $(".mo-header").removeClass("mo-headebar");
+            
+        }
+    }); 
+}); 
+</script>
+<script>
+            let sitterMenu = document.querySelector('#sitter');
+        function manuShow(){
+            if(sitterMenu.style.display == 'none'){
+                sitterMenu.style.display = 'block';
+                
+            }
+            else{
+                sitterMenu.style.display = 'none';
+            };
+            
+        };
+
+        let serviceMenu = document.querySelector('#service');
+        function subShow(){
+            if(serviceMenu.style.display == 'none'){
+                serviceMenu.style.display = 'block';
+            }
+            else{
+                serviceMenu.style.display = 'none';
+            };
+            
+        };
+</script>
+</body>
+</html>

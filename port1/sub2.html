@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/efbf198f8e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" href="img/favi.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub2.css">
+    <title>Pet Mate</title>
+</head>
+<body>
+    <header>
+        <nav class="container flex-box">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul class="big_menu">
+                    <li><a href="#">펫시터</a>
+                        <ul class="submenu">
+                            <li><a href="sub1.html">펫시터 소개</a></li>
+                            <li><a href="#">방문 돌봄 / 산책</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub2.html">펫메이트</a></li>
+                    <li><a href="#">후기</a></li>
+                    <li><a href="#">서비스</a>
+                        <ul class="submenu">
+                            <li><a href="#">정기 예약</a></li>
+                            <li><a href="#">동물병원 연계</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>        
+    </header>
+
+    <!-- 모바일 메뉴 ============================ -->
+    
+        <div class="mo-header"></div>
+            <div class="menu-phone" id="bt" >
+                <span></span>
+            </div>
+        
+    
+        <div class="mo-menu">
+            <ul class="">
+                <li><a href="#" onclick="manuShow()">펫시터</a>
+                    <ul class="mo-submenu" id="sitter">
+                        <li><a href="sub1.html" >펫시터 소개</a></li>
+                        <li><a href="#" >방문 돌봄 / 산책</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub2.html">펫메이트</a></li>
+                <li><a href="#">후기</a></li>
+                <li><a href="#" onclick="subShow()" >서비스</a>
+                    <ul class="mo-submenu" id="service">
+                        <li><a href="#" >정기 예약</a></li>
+                            <li><a href="#" >동물병원 연계</a></li>
+                        <li><a href="#" >고객센터</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<!-- 모바일 메뉴 end  ============================ -->
+
+    <main>
+        <section class="banner">
+                <div class="container">
+                    <div class="banner_img">
+                        <img src="img/pc_sub2_banner2.png" alt="" >
+                    </div>
+                    <div class="banner_txt">
+                        <h2>Pet Mates <br>
+                            Nearby</h2>
+                        <p>우리 동네에서 바로 찾는 펫메이트. <br> 산책과 돌봄이 필요하다면 <br> 펫메이트 커뮤니티에 참여해보세요. <br> 이웃과 연결되어 시터를 이용하거나 <br> 펫메이트로 직접 참여할 수 있습니다.</p>
+                    </div>
+                </div>
+        </section>
+        <section class="mo-banner">
+                <div class="container">
+                    <span></span>
+                    <div class="mo-banner_img">
+                        <img src="img/mobile_sub2_banner2.png" alt="" >
+                    </div>
+                    <div class="mo-banner_txt">
+                        <h2>Pet Mates <br>
+                            Nearby</h2>
+                        <p>우리 동네에서 바로 찾는 펫메이트. <br> 산책과 돌봄이 필요하다면 <br> 펫메이트 커뮤니티에 참여해보세요. <br> 이웃과 연결되어 시터를 이용하거나 <br> 펫메이트로 직접 참여할 수 있습니다.</p>
+                    </div>
+                </div>
+        </section>
+        <section class="pet">
+            <div class="container">
+                <h2>우리 동네 펫메이트</h2>
+
+                <div class="location flex-box">                   
+                        <p><i class="fa-solid fa-location-dot"></i>서울 성동구 성수동1가</p>
+                        <i class="fa-solid fa-xmark"></i>                    
+                </div>
+
+
+                <div class="icon flex-box">
+                    <div class="sort-left">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-border-all"></i>
+                        <span>최신순</span><i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="sort-right">
+                        <ul>
+                            <li class="blod">전체</li>
+                            <li>산책</li>
+                            <li>일상</li>
+                            <li>펫시터</li>
+                            <li>즐겨찾기</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex-box cardlist">
+                    <div class="card">
+                        <img src="img/mainimg/pc_sub2_petmate1.png" alt="">
+                        <div class="txt">
+                            <p class="title">대형견 키우시는 분들 목줄 추천 좀요!</p>
+                            <p class="mate-content">하네스 vs 목줄 고민 중인데 실사용 후기 알려주세요</p>
+                            <div class="line"></div>
+                            <div class="info">
+                                <span class="name">라떼잠드는중</span>
+                                <div class="right">
+                                    <span class="time">방금 전</span>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <p class="point">산책</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/mainimg/pc_sub2_petmate2.png" alt="">
+                        <div class="txt">
+                            <p class="title">평일 오후 시간대 시터 활동 가능!</p>
+                            <p class="mate-content">반려견 산책 경험 많고 소형견 위주로 돌봄 가능합니다</p>
+                            <div class="line"></div>
+                            <div class="info">
+                                <span class="name">하양이랑사는삶</span>
+                                <div class="right">
+                                    <span class="time">방금 전</span>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <p class="point">펫시터</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/mainimg/pc_sub2_petmate3.png" alt="">
+                        <div class="txt">
+                            <p class="title">고양이 하루 돌봄 도와주실 분 계실까요?</p>
+                            <p class="mate-content">출장 때문에 하루 비우게 됐어요. 사료/물만 챙겨주시면 돼요</p>
+                            <div class="line"></div>
+                            <div class="info">
+                                <span class="name">빵이는고양이</span>
+                                <div class="right">
+                                    <span class="time">방금 전</span>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <p class="point">펫시터</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/mainimg/pc_sub2_petmate4.png" alt="">
+                        <div class="txt">
+                            <p class="title">낮잠 자다가 스트레치 한 번 하고 다시 취침</p>
+                            <p class="mate-content">귀엽죠?</p>
+                            <div class="line"></div>
+                            <div class="info">
+                                <span class="name">조용한집사</span>
+                                <div class="right">
+                                    <span class="time">방금 전</span>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <p class="point">일상</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/mainimg/pc_sub2_petmate5.png" alt="">
+                        <div class="txt">
+                            <p class="title">아침 산책 시간대가 점점 익숙해지는 중</p>
+                            <p class="mate-content">같은 강아지들 자주 보니까 괜히 반갑네요.</p>
+                            <div class="line"></div>
+                            <div class="info">
+                                <span class="name">토리랑사는중</span>
+                                <div class="right">
+                                    <span class="time">5분 전</span>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <p class="point">산책</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/mainimg/pc_sub2_petmate6.png" alt="">
+                        <div class="txt">
+                            <p class="title">주말 오전 산책 같이 하실 분 찾습니다</p>
+                            <p class="mate-content">혼자보단 같이 가면 강아지가 더 좋아하더라고요.</p>
+                            <div class="line"></div>
+                            <div class="info">
+                                <span class="name">망고산책기사</span>
+                                <div class="right">
+                                    <span class="time">5분 전</span>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <p class="point">산책</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/mainimg/pc_sub2_petmate7.png" alt="">
+                        <div class="txt">
+                            <p class="title">졸린 눈으로 쳐다보길래</p>
+                            <p class="mate-content">사진 한 장 찍었더니 그대로 다시 눈 감고 잠ㅋㅋ</p>
+                            <div class="line"></div>
+                            <div class="info">
+                                <span class="name">털청소담당</span>
+                                <div class="right">
+                                    <span class="time">6분 전</span>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <p class="point">일상</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/mainimg/pc_sub2_petmate8.png" alt="">
+                        <div class="txt">
+                            <p class="title">창가 햇빛 자리에 딱 맞춰 누워있어요</p>
+                            <p class="mate-content">아침에 자고, 점심에 자고, 지금도 자는 중이에요.</p>
+                            <div class="line"></div>
+                            <div class="info">
+                                <span class="name">콩이집사입니다</span>
+                                <div class="right">
+                                    <span class="time">6분 전</span>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <p class="point">일상</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/mainimg/pc_sub2_petmate9.png" alt="">
+                        <div class="txt">
+                            <p class="title">오늘 산책 중에 사진이 잘 나와서 공유해요</p>
+                            <p class="mate-content">햇빛이 딱 좋았어요.</p>
+                            <div class="line"></div>
+                            <div class="info">
+                                <span class="name">보리야산책가자</span>
+                                <div class="right">
+                                    <span class="time">7분 전</span>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <p class="point">산책</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page container">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><span>...</span></li>
+                        <li><a href="#">54</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mo-pet">
+            <div class="container">
+                <h2>우리 동네 펫메이트</h2>
+
+                <div class="mo-location flex-box">                   
+                        <p><i class="fa-solid fa-location-dot"></i>서울 성동구 성수동1가</p>
+                        <i class="fa-solid fa-xmark"></i>                    
+                </div>
+                
+                <div class="mo-icon">
+                    <div class="mo-sort-top">
+                        <ul>
+                            <li class="mo-blod">전체</li>
+                            <li>산책</li>
+                            <li>일상</li>
+                            <li>펫시터</li>
+                            <li>즐겨찾기</li>
+                        </ul>
+                    </div>
+                    <div class="mo-sort-bottom">
+                        <span>최신순</span><i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mo-card">
+                    <img src="img/mainimg/pc_sub2_petmate1.png" alt="">
+                    <div class="mo-txt">
+                        <p class="mo-title">대형견 키우시는 분들 목줄 추천 좀요!</p>
+                        <p class="mo-mate-content">하네스 vs 목줄 고민 중인데 실사용 후기 알려주세요</p>
+                        <div class="mo-line"></div>
+                        <div class="mo-info">
+                            <span class="mo-name">라떼잠드는중</span>
+                            <div class="mo-right">
+                                <span class="mo-time">방금 전</span>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <p class="mo-point">산책</p>
+                    </div>
+                </div>
+            <div class="mo-card">
+                    <img src="img/mainimg/pc_sub2_petmate2.png" alt="">
+                    <div class="mo-txt">
+                        <p class="mo-title">평일 오후 시간대 시터 활동 가능!</p>
+                        <p class="mo-mate-content">반려견 산책 경험 많고 소형견 위주로 돌봄 가능합니다</p>
+                        <div class="mo-line"></div>
+                        <div class="mo-info">
+                            <span class="mo-name">라떼잠드는중</span>
+                            <div class="mo-right">
+                                <span class="mo-time">방금 전</span>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <p class="mo-point">산책</p>
+                    </div>
+                </div>
+            <div class="mo-card">
+                    <img src="img/mainimg/pc_sub2_petmate3.png" alt="">
+                    <div class="mo-txt">
+                        <p class="mo-title">고양이 하루 돌봄 도와주실 분 계실까요?</p>
+                        <p class="mo-mate-content">출장 때문에 하루 비우게 됐어요. 사료/물만 챙겨주시면 돼요</p>
+                        <div class="mo-line"></div>
+                        <div class="mo-info">
+                            <span class="mo-name">빵이는고양이</span>
+                            <div class="mo-right">
+                                <span class="mo-time">방금 전</span>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <p class="mo-point">산책</p>
+                    </div>
+                </div>
+                <a href="#">더보기 &plus;</a>
+        </section>
+
+    </main>
+
+
+        <footer>
+        <div class="container footer-bar">
+            <div class="flex-box">
+                <ul>
+                    <li><a href="#">서비스 소개</a></li>
+                    <li><a href="#">질문과 답변</a></li>
+                    <li><a href="#">비즈니스 제휴</a></li>
+                    <li><a href="#">펫시터 양성 프로그램 제휴</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">전화 상담 : 070-1234-5678</a></li>
+                    <li><a href="#">채팅 상담</a></li>
+                    <li>평일 11:00-18:00</li>
+                    <li>점심 13:00-14:00</li>
+                </ul>
+                <ul>
+                    <li><a href="#">이용 약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                    <li><a href="#">안전 보상 제도</a></li>
+                </ul>
+            </div>
+            <h2><a href="index.html">펫메이트</a href="#"></h2>
+        </div>
+        <div class="container mo-footer-bar">
+            <div>
+                <ul>
+                    <li><a href="#">서비스 소개 | 질문과 답변 | 비즈니스 제휴 </a></li>
+                    <li><a href="#">펫시터 양성 프로그램 제휴 | 공지사항  </a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">전화 상담 : 070-1234-5678</a></li>
+                    <li><a href="#">채팅 상담 : 평일 11:00-18:00 | 점심 13:00-14:00</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">이용 약관 | 개인정보 처리방침</a></li>
+                    <li><a href="#">위치기반서비스 이용약관 | 안전 보상 제도</a></li>
+                </ul>
+            </div>
+            <h2><a href="index.html">펫메이트</a href="#"></h2>
+        </div>
+    </footer>
+    <div class="popup">
+        <div>
+            <img src="img/mainimg/popup.png" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        let sitterMenu = document.querySelector('#sitter');
+        function manuShow(){
+            if(sitterMenu.style.display == 'none'){
+                sitterMenu.style.display = 'block';
+                
+            }
+            else{
+                sitterMenu.style.display = 'none';
+            };
+            
+        };
+
+        let serviceMenu = document.querySelector('#service');
+        function subShow(){
+            if(serviceMenu.style.display == 'none'){
+                serviceMenu.style.display = 'block';
+            }
+            else{
+                serviceMenu.style.display = 'none';
+            };
+            
+        };
+    </script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+    $('.menu > ul li').mouseenter(function(){
+                $(this).children('.submenu').stop().slideDown('fast');
+            });
+                
+    $('.menu > ul li').mouseleave(function(){
+                $(this).children('.submenu').stop().slideUp('fast');
+            }); 
+
+           
+
+    $('#bt').click(function(){
+        $(this).toggleClass('active'); 
+        $('.mo-menu').toggleClass('show'); 
+    }); 
+
+   
+        $(".fa-heart").click(function(){
+            $(this).toggleClass("heart");
+        });
+
+});
+
+$(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            $(".mo-header").addClass("mo-headebar");
+            
+        } else {
+            $(".mo-header").removeClass("mo-headebar");
+            
+        }
+    }); 
+}); 
+</script>
+</body>
+</html>
